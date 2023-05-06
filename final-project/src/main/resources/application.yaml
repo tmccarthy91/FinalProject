@@ -1,0 +1,10 @@
+ spring:
+   datasource:
+     password: catvet
+     username: catvet
+     url:  jdbc:mysql://localhost:3306/catvet
+     
+ logging:
+   level:
+     root: warn
+     '[catvet]': debug

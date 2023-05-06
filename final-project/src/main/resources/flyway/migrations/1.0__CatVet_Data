@@ -1,0 +1,19 @@
+
+-- Owners
+INSERT INTO owners (ownerId, firstName, lastName) VALUES ('TIMOTHY_MCCARTHY', 'Timothy', 'McCarthy');
+
+-- Cats
+INSERT INTO cats (catId, catName, catAge, breed, color, neutered, personality, notes, owner_pk) VALUES('ZUZU', 'Zuzu', '4', 'AMERICAN_SHORTHAIR', 'black', true, 'aloof', 'loves string', 1);
+INSERT INTO cats (catId, catName, catAge, breed, color, neutered, personality, notes, owner_pk) VALUES('CECILIA', 'Cecilia', '3', 'AMERICAN_LONGHAIR', 'calico', true, 'affectionate', null, 1);
+INSERT INTO cats (catId, catName, catAge, breed, color, neutered, personality, notes, owner_pk) VALUES('WINONA', 'Winona', '1', 'AMERICAN_LONGHAIR', 'brown', true, 'friendly', 'loses toys', 1);
+
+-- Doctors
+INSERT INTO doctors (doctorId, firstName, lastName) VALUES('HUGH_MANN', 'Hugh', 'Mann');
+INSERT INTO doctors (doctorId, firstName, lastName) VALUES('PEDRO_PASCAL', 'Pedro', 'Pascal');
+INSERT INTO doctors (doctorId, firstName, lastName) VALUES('MORTICIA_ADDAMS', 'Morticia', 'Addams');
+
+-- cat_doctor
+insert into cat_doctor (cat_fk, doctor_fk) VALUES(1, 1);
+insert into cat_doctor (cat_fk, doctor_fk) VALUES(2, 2);
+insert into cat_doctor (cat_fk, doctor_fk) VALUES(3, 3);
+insert into cat_doctor (cat_fk, doctor_fk) VALUES(2, 1);
